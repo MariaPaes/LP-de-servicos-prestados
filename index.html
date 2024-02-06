@@ -7,29 +7,98 @@
   <meta name="description" content="Conheça os serviços especializados de manutenção corretiva e preventiva para notebooks, desktops e impressoras oferecidos por Kalyson Bione, profissional com 6 anos de experiência em eletrônica e 11 anos na área de informática. Além disso, explore melhorias de computadores, otimização do sistema, formatação e atendimento remoto. Entre em contato para soluções personalizadas e confiáveis!">
   <meta name="keywords" content="Manutenção corretiva de notebook, Manutenção corretiva de desktop, Manutenção corretiva de impressora, Manutenção preventiva de notebook, Manutenção preventiva de desktop, Manutenção preventiva de impressora, Otimização de sistema, Formatação de computador, Instalação de drives, Atendimento remoto de help desk, Montagem de PC, PC gamer personalizado, PC para escritório, PC personalizado com servidor, PC personalizado sem servidor, Kalyson Bione, Profissional de eletrônica, Experiência em informática, Desenvolvedor C#, Serviços de manutenção e melhoria de computadores">
   
-  <link rel="icon" href="./midia/Logotipo_KB_eletrônico-transparencia.2.png"> 
-  <link rel="stylesheet" href="./Stylesheet/home.css"> <!--VERIFICAR-->
+  <link rel="icon" type="image/png" href="./midia/Logotipo_KB_eletrônico-transparencia.2.png"> 
+  <link rel="stylesheet" href="./Stylesheet/home.css" as="style"> <!--VERIFICAR-->
 </head>
 
 <body>
   <header>
     <div class="container">
         <a href="/" class="logo" title="Voltar ao início">
-          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" xml:space="preserve"></svg> <!--VERIFICAR-->
+          <img src="./midia/Logotipo_KB_eletrônicos-removebg-preview2 (1).png" width=200px alt="Logo KB Eletrônicos"> 
         </a>
-        <nav class="menu">
-          <button data-section="capa" title="Início" data-offset="50" class="menu-link">Início <span></span></button>
-          <button data-section="Servicos" title="Serviços" data-offset="50" class="menu-link"> Serviços <span></span></button>
-          <button data-section="Sobre" title="Sobre" data-offset="50" class="menu-link"> Sobre <span></span></button>
+        <nav class="menu"> 
+          <button title="Início"> Início </button>
+          <button title="Serviços"> Serviços </button>
+          <button title="Sobre"> Sobre </button>
         </nav>
+        <a href="/" class="whatsapp" title="Whatsapp">
+          <img src="./midia/bolha-de-bate-papo.png" width=30px alt="Whatsapp"> 
+        </a>
     </div>
 </header>
 
 
   <main>
-    <section id="Pricipal"></section>
-    <section id="Serviços"></section>
-    <section id="Sobre"></section>
+    <section id="pricipal">
+      <h1>...</h1>
+    </section>
+    <section id="services">
+      <h2>Serviços</h2>
+      <div class="container-services">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <input type="radio" name="radio-btn" id="radio5">
+
+        <div class="item"><b>Manutenção corretiva</b>
+          <ul>
+            <li>Notebook</li>
+            <li>Desktop</li>
+            <li>Impressora</li>
+          </ul>
+        </div>
+        <div class="item"><b>Manutenção preventiva</b>
+          <ul>
+            <li>Notebook</li>
+            <li>Desktop</li>
+            <li>Impressora</li>
+          </ul>
+        </div>
+        <div class="item"><b>Melhorias de computadores</b>
+          <ul>
+            <li>Otimização de sistema</li>
+            <li>Formatação</li>
+            <li>Instalação de sistema operacional</li>
+            <li>Instalação de drives em geral</li>
+          </ul>
+        </div>
+        <div class="item"><b>Help desk</b>
+          <ul>
+            <li>Atendimento remoto</li>
+          </ul>
+        </div>
+        <div class="item"><b>Montagem de software</b>
+          <ul>
+            <li>Pc gamer</li>
+            <li>Pc para escritório</li>
+            <li>Pc personalizado com servidor</li>
+            <li>Pc personalizado sem servidor</li>
+          </ul>
+        </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+          <div class="auto-btn5"></div>
+        </div>
+
+        <div class="manual-navigation">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+          <label for="radio5" class="manual-btn"></label>
+        </div>
+
+      </div>
+    </section>
+    <section id="sobre">
+      <h3>Sobre</h3>
+    </section>
   </main>
 
   <footer>
@@ -39,5 +108,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
