@@ -8,10 +8,12 @@ html, body{
 }
 
 body{
-  height: 100%;
   width: 100%;
-  position:absolute;
-  background: linear-gradient(rgba(2,0,36,1) 0%, rgba(9,9,121,0.9613095238095238) 30%, rgba(0,212,255,1) 80%, rgba(255, 255, 255, 0.907) 100%);
+  height: 100vh;
+  position:relative;
+  background: linear-gradient(rgba(2,0,36,1) 10%, rgba(9,9,121,0.9613095238095238) 50%, rgba(0,212,255,1) 80%, rgba(255, 255, 255, 0.907) 100%); /*background sem completar*/
+  background-repeat: no-repeat;
+
 }  
 
 header{
@@ -40,7 +42,6 @@ nav {
   text-align: center;
   gap: 100px;
   flex-direction: row;
-
 }
 
 nav button{
@@ -53,53 +54,111 @@ nav button{
   cursor: pointer;
 }
 
+main{
+  height: calc(100%-20%);
+}
+
 h1 h2 h3 {
+  position: relative;
   font-family: Montserrat, sans-serif;
   font-size: 1rem;
   color: #FFF;
 }
-#principal{ /*VERIFICAR*/
-  margin-top: 20px;
-  position: absolute;
-  width: auto;
-  height: 200px;
-  border: 1 red solid
+
+section{
+  position: relative;
+  left: 2.5%;
+  text-align: center;
+  width: 90%;
+  height: 400px;
+  margin-bottom: 4%;
 }
 
-#services{
-  margin: 0 auto;
-  width: 100%;
-
-
+#principal{ 
+  top: 100px;
+  color: white;
 }
 
-.container-services{ /*VERIFICAR*/
+.informativa{
   display: flex;
+  margin-top: 4%;
 }
 
-.container-services:hover > :not(:hover){
+picture{
+  margin-top: 0%;
+  margin-left: 3%;
+  justify-content: center;
+  display: flex;
+  width: 40%;
+  height: 85%;
+}
+
+.descritiva{
+  margin-top: 0%;
+  margin-left: 0%;
+  width: 50%;
+  height: 80%;
+}
+
+#services-slider{
+  top: 110px;
+}
+
+#sobre{
+  top: 120px;
+  border: 5px solid red; 
+
+}
+
+.container-services-slides{ 
+  display: flex;
+  padding-top: 4%;
+  padding-left: 2%;
+}
+
+.container-services-slides:hover > :not(:hover){
   opacity: .4;
   transform: scale(0.9);
 }
 
-.item{
+/*
+ul{
+  display:none;
+
+} */
+ 
+ul:hover > :not(:hover){
+  display:flex; /*verificar*/
+
+}
+.container-services-slides input{
+  display: none;
+}
+
+.item-slide{
   transition: .35s;
   cursor: pointer;
   color: #FFF;
-  width: 250px;
-  height: 100px;
-  gap: 30px; /*VERIFICAR*/
-
-  background-color:rgb(4, 42, 29) ;
+  width: 25%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16%; 
+  margin-right: 2%;
+  padding-top: 2%;
+  border-radius: 8%;
+  background-color: rgba(16, 15, 15, 0.466);
 }
 
-b{/*VERIFICAR*/
-  align-items: center;
-  align-content: center;
+b{
   justify-content: center;
 }
 
-li{ /*VERIFICAR*/
+li{
   display: flex;
-  row-gap: 10px;
+  justify-content: center;
+}
+
+p{
+  text-align: justify;
 }
