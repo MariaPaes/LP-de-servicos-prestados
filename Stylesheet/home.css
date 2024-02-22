@@ -148,6 +148,7 @@ ul:hover > :not(:hover){
   padding-top: 2%;
   border-radius: 8%;
   background-color: rgba(16, 15, 15, 0.466);
+  box-shadow: 4px 2px 20px rgba(0, 0, 0, 0.4);
 }
 
 b{
